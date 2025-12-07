@@ -1,45 +1,20 @@
-/*
+var con = document.querySelector("#container");
+var love = document.querySelector("i");
 
-var h1= document.querySelector('h1')
+
+con.addEventListener("dblclick", function(){
+ love.style.transform = "translate(-50%, -50%)  scale(1)  ";
+ love.style.opacity = 0.8;
+
+ love.style.color = "red";
+ setTimeout(function ()  {
+love.style.opacity =0;
+ },1000);
 
 
-// Changing HTML
-h1.innerHTML = 'Prabhu Ki Maya'
 
-h1.innerHTML = 'DOM PADLO GUYS ! YES GUYS ACCHE SE PDHNA SAB , SAB ACCHA HOGA'
+setTimeout(function(){
+    love.style.transform = "translate(-50%, -40%) scale(0) rotate(0 deg)";
+}, 2000);
 
-// Changing CSS
- h1.style.color = 'crimson'
-
-var box = document.querySelector('#box')
-box.innerHTML = 'hey hey'
-
-box.style.backgroundColor ='red'
-
-*/
-/*
-
-var h1 = document.querySelector('h1')
-var btn= document.querySelector('button')
-
-btn.addEventListener('click', function() {
-
-    h1.innerHTML = ' I am batman !'
-    h1.style.color = 'red'
-    h1.style.fontSize = '60px'
-});
-*/
-
-var inc = document.querySelector('#inc')
-var dec = document.querySelector('#dec')
-var h1 = document.querySelector('h1')
-
-var a= 0
-inc.addEventListener('click', function() {
-a++
-h1.innerHTML = a
-})
-dec.addEventListener('click', function(){
-    a--
-    h1.innerHTML =a
 })
